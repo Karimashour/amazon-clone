@@ -1,0 +1,36 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: relative;
+}
+@media(max-width:800px){
+  .order{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    width: 80%;
+    max-height: 700px;
+    transition: background 0.3s ease;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+}
+.order-id {
+  position: absolute;
+  row-gap: 40px;
+  right: 20px;
+}
+
+.order-total {
+  font-weight: 500;
+  text-align: right;
+}
+@media(max-width:800px){
+  .order-id{
+    display: none;
+  }
+}
